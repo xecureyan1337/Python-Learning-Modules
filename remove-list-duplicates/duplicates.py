@@ -1,15 +1,28 @@
-r = int(input("range: "))
+from time import sleep
 
-rlist = []
+class RemoveDuplicates():
+    def __init__(self, range=int(input("Enter range: "))):
+        self.range = range
 
-# before remove duplicates
-for x in range(r):
-    new_x = int(input("x: "))
-    rlist.append(new_x)
+    def get_range(self):
+        return self.range
+    
+    def run(self):
 
-print(rlist)
+        the_range = self.get_range()
+        num_list = []
 
-# after remove duplicate
-rlist = list(dict.fromkeys(rlist))
+        for num in range(the_range):
+            num = int(input("Enter number: "))
+            num_list.append(num)
+        
+        print(f"List with its duplicates: {num_list}")
 
-print(rlist)
+        num_list = list(dict.fromkeys(num_list))
+
+        print(f"List without its duplicates: {num_list}")
+
+
+if __name__ == "__main__":
+    mynum = RemoveDuplicates(5)
+    mynum.run()
