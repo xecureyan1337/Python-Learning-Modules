@@ -7,6 +7,7 @@ This repository is a collection of Python programming exercises.
 - [x] sys-argv
 - [x] mysql-connector
 - [x] args-kwargs
-- [ ] to be continued
+- [x] remove-list-duplicates
+- [x] reverse-string
 
 ### <div align="center">Happy Hacking & Learning</div>
