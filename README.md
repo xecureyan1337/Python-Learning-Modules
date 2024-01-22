@@ -9,5 +9,6 @@ This repository is a collection of Python programming exercises.
 - [x] args-kwargs
 - [x] remove-list-duplicates
 - [x] reverse-string
+- [ ] soon
 
 ### <div align="center">Happy Hacking & Learning</div>
