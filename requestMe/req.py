@@ -1,15 +1,13 @@
 import requests
 
-# get requests
-url = "https://eknows.uinsgd.acx.ixd"
+urls = ["https://eknows.uinsgd.ac.id", "https://eknows.uinsgd.ac.id/config.js", "https://salamas.uinsgd.ac.id/"]
 
-response = requests.get(url)
-# print(response)
-
-# status_code
-# print(response.status_code)
-
-if response.status_code == 200:
-    print("Authenticated")
-elif response.status_code == 404:
-    print("Not Found")
+for url in urls:
+    try:
+        response = requests.get(url)
+        if response.status_code == 404:
+            print("got you")
+    except Exception as er:
+        print(f"Oopsss, error: {er}")
+    else:
+        print("Voila..")
