@@ -3,9 +3,9 @@
 
 import numpy as np
 
-# example case
-bb = [66.5, 75.2, 60.5, 67.9, 77.4, 70.2, 51.5, 65.5]
-tb = [1.43, 1.64, 1.31, 1.58, 1.78, 1.54, 1.56, 1.75]
+# sample bb & tb
+bb = [60.5, 45.2, 60.5, 67.9, 77.4, 70.2, 51.5, 65.5]
+tb = [1.50, 1.64, 1.31, 1.58, 1.78, 1.54, 1.56, 1.75]
 
 np_bb = np.array(bb)
 np_tb = np.array(tb)
@@ -22,12 +22,10 @@ print(bmi)
 for i in range(len(bmi)):
 
     if bmi[i] < 18.5:
-        print("----- Kurang BB ----")
+        print(f"{bmi[i]} ----- Kurang BB")
     elif bmi[i] > 18.5 and bmi[i] <= 24.9:
-        print("--- Normal ---- ")
+        print(f"{bmi[i]} --- Normal ")
     elif bmi[i] > 25 and bmi[i] <= 29.9:
-        print("---- overweight ----")
+        print(f"{bmi[i]} ---- overweight ")
     elif bmi[i] > 30:
-        print(f"---- obesitas ----")
-
-    print(f"BMI[{i}] = {bmi[i]}")
+        print(f"{bmi[i]} ---- obesitas ")
