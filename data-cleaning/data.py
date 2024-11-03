@@ -1,20 +1,15 @@
 import pandas as pd
 
+# create dataset
+mydata = {
+    'mobil' : ['BMW', 'Lambo', 'Bugga'],
+    'slot'  : ['3', '2', '1']
+}
+
 # import modules + read file csv
-df = pd.read_csv('contoh.csv')
-df2 = pd.read_csv('games.csv')
+# df = pd.read_csv('contoh.csv')
+# df2 = pd.read_csv('games.csv')
 
-# print data
-# print(df)
-# print(df2.head())
+myvar = pd.DataFrame(mydata)
 
-# basic logic to print `usia` less than x
-dm = df[df['usia']<30]
-
-print(dm)
-print(br)
-
-# sort value
-sv = df.sort_values(by='usia')
-
-print(sv)
+print(myvar)
